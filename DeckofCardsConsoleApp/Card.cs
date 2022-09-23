@@ -24,10 +24,15 @@ namespace DeckofCardsConsoleApp
 
     class Card : ICard
     {
-        public Suit Suit { get; set; }
-        public Face Face { get; set; }
-        public bool IsFaceCard { get; private set; }
-        public bool IsRed { get; private set; }
+        private Suit suit;
+        private Face face;
+        private bool isFaceCard;
+        private bool isRed;
+
+        public Suit Suit { get => suit; set => suit = value; }
+        public Face Face { get => face; set => face = value; }
+        public bool IsFaceCard { get => isFaceCard; private set => isFaceCard = value; }
+        public bool IsRed { get => isRed; private set => isRed = value; }
 
         public Card(Suit suit, Face face)
         {
