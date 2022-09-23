@@ -17,9 +17,8 @@ namespace DeckofCardsConsoleApp
         private int counter;
         private Random random;
         private List<Card> deck;
-        private int counter1;
 
-        public int Counter { get => counter1; set => counter1 = value; }
+        public int Counter { get => counter; set => counter = value; }
         public int Size { get { return size; } }
 
         public Deck()
