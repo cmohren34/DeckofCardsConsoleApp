@@ -31,6 +31,8 @@ namespace DeckofCardsConsoleApp
 
         public Suit Suit { get => suit; set => suit = value; }
         public Face Face { get => face; set => face = value; }
+
+        // Read-only properties
         public bool IsFaceCard { get => isFaceCard; private set => isFaceCard = value; }
         public bool IsRed { get => isRed; private set => isRed = value; }
 
