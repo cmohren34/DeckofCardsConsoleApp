@@ -8,6 +8,10 @@ namespace DeckofCardsConsoleApp
         Face Face { get; set; }
         bool IsFaceCard { get; }
         bool IsRed { get; }
+
+        void FaceCard(Face face);
+        void Color(Suit suit);
+        string ToString();
     }
 
     public enum Suit

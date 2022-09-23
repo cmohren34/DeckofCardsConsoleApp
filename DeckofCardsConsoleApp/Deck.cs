@@ -9,6 +9,11 @@ namespace DeckofCardsConsoleApp
         int Size { get; }
         int Counter { get; }
         IEnumerable<Card> CreateDeck { get; }
+
+        Card Draw();
+        void Shuffle();
+        void ShuffleMessage();
+        void DrawWarning();
     }
 
     internal class Deck : IDeck
